@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo do Carinho</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- CSS custom -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-8 col-lg-6">
+
+            <div class="card shadow-lg border-0">
+                <div class="card-body text-center">
+
+                    <!-- START -->
+                    <div id="start-screen">
+                        <h1 class="fw-bold mb-4">✨ Jogo do Carinho ✨</h1>
+                        <button id="startGameBtn" class="btn btn-lg btn-dark px-5">
+                            Iniciar Jogo
+                        </button>
+                    </div>
+
+                    <!-- GAME -->
+                    <div id="game-screen" class="d-none">
+
+                        <!-- SCORE -->
+                        <div class="d-flex justify-content-between mb-3">
+                            <div class="score-box">
+                                Ela ✔ <span id="ela-hits">0</span> | ✖ <span id="ela-misses">0</span>
+                            </div>
+                            <div class="score-box">
+                                Ele ✔ <span id="ele-hits">0</span> | ✖ <span id="ele-misses">0</span>
+                            </div>
+                        </div>
+
+                        <div class="divider"></div>
+
+                        <h5 id="turn-text" class="mb-3"></h5>
+
+                        <!-- QUESTION -->
+                        <div id="question-container" class="d-none">
+                            <p id="question-text" class="fs-5 mb-4"></p>
+
+                            <div class="d-flex justify-content-center gap-3">
+                                <button id="hitBtn" class="btn btn-success px-4">Acertou</button>
+                                <button id="missBtn" class="btn btn-danger px-4">Errou</button>
+                            </div>
+                        </div>
+
+                        <!-- RESULT -->
+                        <div id="result-container" class="d-none">
+                            <p id="result-text" class="fs-5 fw-bold mb-3"></p>
+                            <button id="nextQuestionBtn" class="btn btn-outline-dark">
+                                Próxima pergunta
+                            </button>
+                        </div>
+
+                        <button id="firstQuestionBtn" class="btn btn-outline-dark mt-3">
+                            Primeira pergunta
+                        </button>
+
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- JS do jogo -->
+<script src="app.js"></script>
+</body>
+</html>

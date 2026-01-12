@@ -1,0 +1,24 @@
+body {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #ff5fa2, #7b2cff);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card {
+    border-radius: 18px;
+}
+
+.score-box {
+    background: rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    padding: 10px 18px;
+    font-weight: 600;
+}
+
+.divider {
+    height: 1px;
+    background: rgba(0, 0, 0, 0.15);
+    margin: 20px 0;
+}
